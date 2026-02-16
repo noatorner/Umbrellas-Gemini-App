@@ -1,0 +1,7 @@
+{
+  "name": "Umbrella Pattern Studio",
+  "description": "A professional tool to apply custom patterns to umbrella models while maintaining shape and specifying handle colors using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -9,7 +9,7 @@ export const generateProfessionalUmbrella = async (
 ): Promise<string | null> => {
   // Create a new instance right before the call to ensure it uses the most up-to-date API key.
   // Using process.env.API_KEY directly as per guidelines.
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
   const cleanBase64 = (b64: string) => b64.split(',')[1];
 
   const parts: any[] = [

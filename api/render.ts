@@ -54,7 +54,7 @@ Output: photorealistic product render.
 `;
 
     // Image edits endpoint (para modificar una imagen existente)
-    const result = await client.images.edits({
+    const result = await client.images.edit({
       model: "gpt-image-1",
       image: files, // array permitido
       prompt,
